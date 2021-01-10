@@ -30,7 +30,7 @@ const errorMessage = document.querySelector("#error-message");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    fetch(`http://localhost:3000/weather?address=${input.value}`)
+    fetch(`/weather?address=${input.value}`)
         .then(response => {
             response.json()
                 .then(data => {
