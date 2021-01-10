@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    {{> header}}
+    <form>
+        <input type="text" name="address" placeholder="Type address">
+        <button>Search</button>
+    </form>
+
+    <p id="success-message"></p>
+    <p id="error-message"></p>
+
+    {{> footer}}
+
+    <script src="/app.js"></script>
+</body>
+</html>
+
