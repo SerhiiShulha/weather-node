@@ -55,23 +55,7 @@ app.get("/weather", (req, res) => {
     });
 });
 
-app.get("/weather/dnipro", (req, res) => {
-    const data = getWeather("dnipro");
-    res.render("city", {
-        forecast: data,
-        footerMessage: "Running on Express and Node",
-    });
-});
-
-app.get("/weather/kyiv", (req, res) => {
-    res.render("city", {
-        forecast: getWeather("kyiv"),
-        footerMessage: "Running on Express and Node",
-    });
-});
-
 app.get("/products", (req, res) => {
-    console.log(req.query);
     res.send({
         products: [],
     });
